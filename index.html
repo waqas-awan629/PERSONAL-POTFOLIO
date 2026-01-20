@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Muhammad Waqas Awan | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+  <button onclick="toggleTheme()" id="themeBtn">Dark</button>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="card hero animate">
+  <div class="hero-left">
+    <h1>MUHAMMAD WAQAS AWAN</h1>
+    
+    <!-- MOVING INFO CARD -->
+    <div class="info-card-container">
+      <div id="infoCard" class="info-card"></div>
+    </div>
+    
+    <p >
+      I am a student of UET Abbottabad Campus with interest in programming
+      and web development.
+    </p>
+
+    <div class="social">
+      <a href="https://www.facebook.com/share/1HK4SSiedd/" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com/in/muhammad-waqas-awan-97a538398" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/its_waqas_56" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="PICTURE 1.jpg" class="profile-img" alt="Muhammad Waqas Awan">
+  </div>
+</section>
+
+<section id="about" class="card section animate">
+  <h2>About Me</h2>
+  <p >I am a student of UET Abbottabad Campus with interest in programming and web development.</p>
+</section>
+
+<section id="education" class="card section animate">
+  <h2>Education</h2>
+  <table>
+    <tr><th>Level</th><th>Institute</th><th>Year</th></tr>
+    <tr><td>Primary</td><td>Umair Public High School</td><td>2021</td></tr>
+    <tr><td>Intermediate</td><td>Govt Model Science College</td><td>2023</td></tr>
+    <tr><td>University</td><td>UET Abbottabad</td><td>2025–Present</td></tr>
+  </table>
+</section>
+
+<section id="skills" class="card section animate">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML & CSS</li>
+    <li>JavaScript (Basic)</li>
+    <li>C Programming</li>
+  </ul>
+</section>
+
+<section id="work" class="card section animate">
+  <h2>Work / Projects</h2>
+  <ul>
+    <li>Portfolio Website</li>
+    <li>Library Management System (C)</li>
+  </ul>
+</section>
+
+<section class="card animate">
+  <h2>Curriculum Vitae</h2>
+  <div class="cv-buttons">
+    <button onclick="toggleCV()">Show CV</button>
+    <!-- Direct download link -->
+    <a href="CV.pdf" download="Muhammad_Waqas_Awan_CV.pdf" class="download-btn">Download CV</a>
+  </div>
+  <iframe id="cvFrame"></iframe>
+</section>
+
+<section id="gallery" class="card section animate">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="gallery/picture 1">
+    <img src="gallery/picture 2">
+    <img src="gallery/picture 3">
+    <img src="gallery/picture 4">
+    <img src="gallery/picture 5">
+    <img src="gallery/picture 6">
+    <img src="gallery/picture 7">
+    <img src="gallery/picture 8">
+    <img src="gallery/picture 9">
+    <img src="gallery/picture 10">
+   
+  </div>
+</section>
+
+<section id="contact" class="card section animate">
+  <h2>Contact</h2>
+  <form onsubmit="return validateForm()">
+    <input id="name" placeholder="AITAZAZ AHSAN ">
+    <input id="email" placeholder="aitazaza67@gmail.com">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button>Send</button>
+  </form>
+</section>
+
+<footer>© 2026 WAQAS AWAN</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
